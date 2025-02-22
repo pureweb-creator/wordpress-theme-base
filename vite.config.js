@@ -1,19 +1,10 @@
-import {defineConfig} from 'vite'
+import { v4wp } from '@kucrut/vite-for-wp';
 
-export default defineConfig({
-    server: {
-        cors: {
-            origin: 'http://localhost',
-        },
-    },
-    build: {
-        rollupOptions: {
+export default {
+    plugins: [
+        v4wp( {
             input: 'main.js',
-            output: {
-                entryFileNames: `assets/[name].js`,
-                chunkFileNames: `assets/[name].js`,
-                assetFileNames: `assets/[name].[ext]`
-            }
-        },
-    },
-})
+            outDir: 'dist',
+        } ),
+    ],
+};

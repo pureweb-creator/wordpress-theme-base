@@ -5,6 +5,7 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@kucrut/vite-for-wp": "^0.10.0",
     "sass": "^1.85.0",
     "vite": "^6.1.1"
   }
