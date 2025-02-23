@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="<?= pll_current_language() ?>">
+<html lang="<?= get_bloginfo('language') ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
