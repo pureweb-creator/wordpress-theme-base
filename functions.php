@@ -15,7 +15,7 @@ add_action( 'wp_enqueue_scripts', function (): void {
         __DIR__ . '/dist',
         'main.js',
         [
-            'handle' => 'my-script-handle',
+            'handle' => 'mytheme-handle',
             'dependencies' => ['jquery'],
             'css-dependencies' => [],
             'css-media' => 'all',
