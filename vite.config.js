@@ -1,5 +1,5 @@
+import { resolve } from 'path';
 import { v4wp } from '@kucrut/vite-for-wp';
-
 export default {
     plugins: [
         v4wp( {
@@ -7,4 +7,9 @@ export default {
             outDir: 'dist',
         } ),
     ],
+    resolve: {
+        alias: {
+            $fonts: resolve('./fonts')
+        }
+    },
 };
